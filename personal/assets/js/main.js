@@ -59,3 +59,19 @@
 	});
 
 })(jQuery);
+
+$(document).ready(function() {
+	turnRipples = function(){
+		/*Ripples Effects**/
+		$('#header').ripples({
+			resolution: 128,
+		dropRadius: 10, //px
+		perturbance: 0.08,
+		interactive: true
+	});
+	}
+	console.log('doc ready');
+	$('#btnToggleRipples').on('click', function() {
+		$('#header').ripples('pause');
+	});
+});
