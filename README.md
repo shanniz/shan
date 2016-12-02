@@ -1,5 +1,5 @@
 
-This is Zeeshan A Nizamani
+This is Zeeshan A. Nizamani
 
 Introducing my personal web page.
 
