@@ -154,8 +154,13 @@
 
 	p {
 		margin: 0 0 2em 0;
+		font-family: monospace;
+	}
+	p.description {
+		margin: 0 0 2em 0;
 		color: darkblue;
     font-family: monospace;
+		font-style: italic;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
