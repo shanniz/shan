@@ -61,6 +61,24 @@
 })(jQuery);
 
 $(document).ready(function() {
+
+	var calcTimeDiff = function(){
+		var t1 = new Date(1991, 01, 18, 0, 0, 0, 0);
+			var t2 = new Date();
+			var diff = Math.abs(t2.getTime() - t1.getTime());
+			var seconds_from_T1_to_T2 = diff / 1000;
+			var hours_from_T1_to_T2 = seconds_from_T1_to_T2/3600;
+			return (hours_from_T1_to_T2);
+	}
+
+	var calcCurrentDistance = function(){
+		var hrs = calcTimeDiff();
+		document.getElementById('earth_dist').innerHTML = hrs * 43000;
+	}
+	
+
+	setInterval(calcCurrentDistance, 1000);
+
 	turnRipples = function(){
 		/*Ripples Effects**/
 		$('#header').ripples({
