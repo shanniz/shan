@@ -33,7 +33,11 @@
 }
 
 .pro{
- text-align: center;
+  text-align: center;
   vertical-align: middle;
-  color: white;
+  color: aliceblue;
+  margin-top: 7%;
+  font-size: 220%;
+  font-family: 'Comic Sans, Comic Sans MS, cursive';
+  font-style: italic;
 }
